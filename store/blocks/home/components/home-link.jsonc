@@ -1,0 +1,14 @@
+// {
+//     "link.product#link-home": {
+//         "blocks": [
+//             "link#home__link--booton"
+//         ]
+//     },
+//     "link#home__link--booton" : {
+//         "props": {
+//             "href": "/",
+//             "label": "Click Aquí",
+//             "displayMode": "button"
+//         }
+//     }
+// }
