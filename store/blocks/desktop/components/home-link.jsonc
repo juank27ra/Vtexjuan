@@ -1,0 +1,11 @@
+{
+    "link#home__link--button" : {
+        "title": "Title button",
+        "props": {
+            "blockClass": "link__button--home",
+            "href": "/",
+            "label": "Click Aquí",
+            "displayMode": "button"
+        }
+    }
+}
