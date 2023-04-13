@@ -1,0 +1,55 @@
+{
+    "responsive-layout.desktop": {
+        "title": "componente de desktop",
+        "children": ["rich-text#desktop", "image#desktop"]
+      },
+      "responsive-layout.mobile": {
+        "title": "componente de tablet y phone",
+        "children": ["rich-text#mobile"]
+      },
+      "responsive-layout.tablet": {
+        "title": "componente de tablet",
+        "children": ["rich-text#tablet"]
+      },
+      "responsive-layout.phone": {
+        "title": "componente de phone",
+        "children": ["rich-text#phone"]
+      },
+    
+      "rich-text#desktop": {
+        "title": "titulo de desktop",
+        "props": {
+          "text": "# This will only show up on desktop.",
+          "blockClass": "title desktop"
+        }
+      },
+      "image#desktop": {
+        "title": "imagen de muestra",
+        "props": {
+          "width": 200,
+          "src": "assets/img/main-slide-1.jpg"
+        }
+      },
+    
+      "rich-text#tablet": {
+        "title": "texto de prueba table",
+        "props": {
+          "text": "## This will only show up on tablet.",
+          "blockClass": "title tablet"
+        }
+      },
+      "rich-text#mobile": {
+        "title": "texto de prueba mobile",
+        "props": {
+          "text": "## This will show up on tablet and phone.",
+          "blockClass": "title tablet"
+        }
+      },
+      "rich-text#phone": {
+        "title": "texto de prueba phone",
+        "props": {
+          "text": "## This will only show up on phone.",
+          "blockClass": "title phone"
+        }
+      }  
+}

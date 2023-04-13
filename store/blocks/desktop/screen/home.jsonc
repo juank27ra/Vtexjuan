@@ -2,95 +2,74 @@
   "store.home": { 
     "blocks": [
       // "flex-layout.row#home__section--one",
-      // "rich-text",
+      "rich-text#test__de--prueba",
       // "slider-layout#home__slider--children",
       // "list-context.image-list#home__slider--list"
       "flex-layout.row#home__section--one",
-      "flex-layout.row#home__section--two"      
+      "flex-layout.row#home__section--two",
+      "responsive-layout.desktop",      
+      "responsive-layout.mobile",      
+      "responsive-layout.tablet",      
+      "responsive-layout.phone" ,
+      "modal-trigger#home__modal--children",
+      "modal-trigger#home__modal--event"     
     ]
   },
-  "flex-layout.row#home__section--one": {
-    "title": "section Uno",
+  "rich-text#test__de--prueba": {
+    "title":"Texto de prueba",
+    "props": {
+      "text": "Este es un texto de prueba!!!",
+      "blockClass": "texto-de-prueba"
+    }
+  },
+  "modal-trigger#home__modal--children" : {
     "children": [
-      "flex-layout.col#section__one--image",
-      "flex-layout.col#section__one--text"
+      "rich-text#home__modal--trigger",
+      "modal-layout#home__modal--layout"
+    ]
+  },
+  "rich-text#home__modal--trigger": {
+    "title": "texto del modal",
+    "props": {
+      "text": "Terminos y condiciones"
+    }
+  },
+  "modal-layout#home__modal--layout" : {
+    "title": "modal layout triger",
+    "children": [
+      "rich-text#home__modal--content"
+    ]
+  },
+  "rich-text#home__modal--content": {
+    "title": "text modal content",
+    "props": {
+      "text": "# terminos y condiciones \nLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed rhoncus augue. Praesent nec tempor massa. Nunc ut auctor quam, nec ultricies mauris. Aliquam venenatis malesuada hendrerit. Praesent cursus risus in nisl elementum, sit amet molestie elit varius. Nulla facilisi. Morbi elementum eu est id pellentesque. Donec cursus nibh sit amet malesuada pharetra. Donec convallis imperdiet erat. Mauris vitae facilisis ligula. Integer eleifend, tellus quis blandit molestie, tortor nisl pulvinar ante, id pharetra nisl ipsum ac elit. Mauris porta pulvinar arcu in commodo. Duis ligula leo, vehicula non est a."
+    }
+  },
+  "modal-trigger#home__modal--event": {
+    "title": "modal para evento",
+    "children": [
+      "modal-layout#home__modal--event"
     ],
     "props": {
-      "blockClass": "home__section--one"
+      "trigger": "event",
+      "customPixelEventName": "pageView"
     }
   },
-  "flex-layout.col#section__one--image": {
-    "title": "Imagen de seccion uno",
+  "modal-layout#home__modal--event": {
     "children": [
-      "image#home--image"
-    ],
+      "modal-header#home__modal--event",
+      "rich-text#home__modal--event-content"
+    ]
+  },
+  "rich-text#home__modal--event-content": {
     "props": {
-      // "width": "40%",
-      "blockClass": "section_one--image",
-      "colSizing": "auto"
+      "text": "evento de DOM loaded"
     }
   },
-  "flex-layout.col#section__one--text": {
-    "title": "Texto de seccion uno",
-    "children": [
-      "rich-text#section__one--title",
-      "rich-text#section__one--paragraph"
-    ], 
-    "props": {
-      "verticalAlign": "middle"
-      // "width": "grow"
-    }
-  },
-  "rich-text#section__one--title": {
-    "props": {
-      "text": "# Bienvenidos a VTEX U"
-    }
-  },
-  "rich-text#section__one--paragraph": {
-    "props": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet varius nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc semper semper arcu, porttitor lobortis tortor luctus a. Donec sed posuere elit. Proin lorem tortor, sagittis ut leo. "
-    }
-  },
-  "flex-layout.row#home__section--two" : {
-    "children": [
-      "flex-layout.col#section__two--item-1",
-      "flex-layout.col#section__two--item-2",
-      "flex-layout.col#section__two--item-3"
-    ],
-    "props": {
-      "preserveLayoutOnMobile": true
-    }
-  },
-  "flex-layout.col#section__two--item-1": {
-    "children": [
-      "image#home__slider--one"
-    ],
-    "props": {
-      "width": "25%"
-    }
-  },
-  "flex-layout.col#section__two--item-2": {
-    "children": [
-      "rich-text#text",
-      "link#home__link--button"
-    ],
-    "props": {
-      "blockClass": "section__two--item",
-      "width": "50%"
-    }
-  },
-  "flex-layout.col#section__two--item-3": {
-    "children": [
-      "image#home__slider--two",
-      "image#home__slider--three"
-    ],
-    "props": {
-      "width": "25%"
-    }
-  },
-  "rich-text#text": {
-    "props": {
-      "text": "Este es un texto de prueba"
+  "modal-header#home__modal--event": {
+    "props":{
+      "showCloseButton": true
     }
   }
 }

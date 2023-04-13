@@ -1,7 +1,7 @@
-.flexRowContent--home__section--one {
-    /* background-color: rgb(27, 27, 42); */
+/* .flexRowContent--home__section--one {
+    background-color: rgb(27, 27, 42);
     
-}
+} */
 
 .flexColChild--section__one--image {
     max-width: 600px;
@@ -10,3 +10,4 @@
 /* .link--link__button--home :global(.vtex-store-link-0-x-label--link__button--home) {
     background-color: red;
 } */
+

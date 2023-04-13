@@ -9,6 +9,7 @@
     }
   },
   "slider-layout#home__slider--children": {
+    "title": "home__slider--children",
     "props": {
       "itemsPerPage": {
         "desktop": 1,

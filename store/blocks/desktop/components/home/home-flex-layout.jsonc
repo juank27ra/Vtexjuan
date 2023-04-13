@@ -1,0 +1,87 @@
+{
+    "flex-layout.row#home__section--one": {
+        "title": "section Uno",
+        "children": [
+          "flex-layout.col#section__one--image",
+          "flex-layout.col#section__one--text"
+        ],
+        "props": {
+          "blockClass": "home__section--one"
+        }
+      },
+      "flex-layout.col#section__one--image": {
+        "title": "Imagen de seccion uno",
+        "children": [
+          "image#home--image"
+        ],
+        "props": {
+          // "width": "40%",
+          "blockClass": "section_one--image",
+          "colSizing": "auto"
+        }
+      },
+      "flex-layout.col#section__one--text": {
+        "title": "Texto de seccion uno",
+        "children": [
+          "rich-text#section__one--title",
+          "rich-text#section__one--paragraph"
+        ], 
+        "props": {
+          "verticalAlign": "middle"
+          // "width": "grow"
+        }
+      },
+      "rich-text#section__one--title": {
+        "props": {
+          "text": "# Bienvenidos a VTEX U"
+        }
+      },
+      "rich-text#section__one--paragraph": {
+        "props": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet varius nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc semper semper arcu, porttitor lobortis tortor luctus a. Donec sed posuere elit. Proin lorem tortor, sagittis ut leo. "
+        }
+      },
+      "flex-layout.row#home__section--two" : {
+        "children": [
+          "flex-layout.col#section__two--item-1",
+          "flex-layout.col#section__two--item-2",
+          "flex-layout.col#section__two--item-3"
+        ],
+        "props": {
+          "preserveLayoutOnMobile": true
+        }
+      },
+      "flex-layout.col#section__two--item-1": {
+        "children": [
+          "image#home__slider--one"
+        ],
+        "props": {
+          "width": "25%"
+        }
+      },
+      "flex-layout.col#section__two--item-2": {
+        "children": [
+          "rich-text#text",
+          "link#home__link--button"
+        ],
+        "props": {
+          "blockClass": "section__two--item",
+          "width": "50%"
+        }
+      },
+      "flex-layout.col#section__two--item-3": {
+        "children": [
+          "image#home__slider--two",
+          "image#home__slider--three"
+        ],
+        "props": {
+          "width": "25%"
+        }
+      },
+      "rich-text#text": {
+        "title":"Texto de prueba",
+        "props": {
+          "text": "Este es un texto de prueba!!!"
+        }
+      }
+}

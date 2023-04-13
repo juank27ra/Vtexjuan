@@ -1,0 +1,18 @@
+{
+    "header-layout.desktop" : {
+        "children": [
+            "header-row#header__top"
+        ]
+    },
+    "header-row#header__top": {
+        "children": [
+            "rich-text#text__desktop--headers"
+        ]
+    },
+    "rich-text#text__desktop--headers": {
+        "title": "desktop-header",
+        "props":{
+            "text": "### texto de header desktop"
+        }
+    }
+}
